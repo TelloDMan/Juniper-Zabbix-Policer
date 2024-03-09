@@ -12,7 +12,7 @@ set firewall policer default if-exceeding bandwidth-limit 10m
 set firewall policer default if-exceeding burst-size-limit 150k
 set firewall policer default then discard
 ```
-if you have a policer configured like this, we will modify it and convert it the policer name to limit-```speed in megabits```
+if you have a policer configured like this, we will modify it and convert the policer name to limit-```speed in megabits```
 ```
 set firewall policer limit-10m if-exceeding bandwidth-limit 10m
 set firewall policer limit-10m if-exceeding burst-size-limit 150k
